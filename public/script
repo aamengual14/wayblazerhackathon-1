@@ -1,0 +1,51 @@
+$( document ).ready(function() {
+  var concepts = [];
+  var imagesArray = [
+    {
+      imageId: "image1",
+      concepts: ["adventure", "water", "outdoors"]
+    },
+    {
+      imageId: "image2",
+      concepts: ["romance", "restaurants", "wine"]
+    },
+    {
+      imageId: "image3",
+      concepts: ["family", "kids", "theme parks"]
+    },
+    {
+      imageId: "image4",
+      concepts: ["history", "tours", "city"]
+    },
+    {
+      imageId: "image5",
+      concepts: ["nightlife", "clubs", "dancing"]
+    },
+    {
+      imageId: "image6",
+      concepts: ["relax", "spa", "massage"]
+    },
+  ];
+  // for (var i = 0; i < imagesArray.length; i++){
+
+  // }
+  $('.button').children('.img-responsive').hide(200);
+  $('.button').click(function(e) {
+      e.preventDefault();
+      //var cellNum = ($( this ).parent('.cell').attr('id'));
+      //var cellIndex = cellArray.indexOf(cellNum);
+      //if(playerOne){
+        $( this ).children('#image1').hide(200);
+        $( this ).children('#image2').show(200);
+        //cellArray[cellIndex] = "O";
+      //}
+      // else if (playerOne===false){
+      //   $( this ).siblings('.xPiece').show(200);
+      //   cellArray[cellIndex] = "X";
+      // }
+      // $( this ).hide();
+      // playerOne = !playerOne;
+      // getWinner();
+      //updateScoreBoard(currentWinner);
+    });
+}
