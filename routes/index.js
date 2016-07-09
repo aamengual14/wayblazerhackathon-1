@@ -4,11 +4,16 @@ var request = require('request');
 var session = require('express-session');
 
 
-// request('http://www.google.com', function (error, response, body) {
-//   if (!error && response.statusCode == 200) {
-//     console.log(body) // Show the HTML for the Google homepage.
-//   }
-// })
+
+var options = {
+  host: 'https://api.wayblazer.com/v1/accommodations/search?adults=1&children=2&rooms=1&destination=Austin,TX&tripType=none&concepts=nature&startDate=2016-10-06T05:00:00.000Z&endDate=2016-10-10T05:00:00.000Z',
+  port: 80,
+  method: 'GET',
+  headers: {
+    'x-api-key': 'Q6TaYnb0Z48qVIafFEfx481ev598ak1pApM6c0A8'
+  }
+};
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -16,7 +21,12 @@ router.get('/', function(req, res, next) {
 });
 
 
+request(options, function(error, response, body) {
+  console.log(error);
+})
+
 
 module.exports = router;
+
 
 
