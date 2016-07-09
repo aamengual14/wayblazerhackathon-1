@@ -1,6 +1,27 @@
 
 <% include partials/header %>
     <!-- Page Content -->
+    <div id="userForm">
+      <form action="" method="get">
+        <label for="rooms">Rooms:</label>
+        <input class="input" type="text" name="rooms" placeholder="Enter the number of rooms needed"><br>
+        <label for="adults">Adults:</label>
+        <input class="input" type="text" name="adults" placeholder="Enter the number of adults taking this trip"><br>
+        <label for="Children">Children:</label>
+        <input class="input" type="text" name="children" placeholder="Enter the number of children taking this trip"><br>
+        <label for="startDate">Start Date:</label>
+        <input class="input" type="text" name="startDate" placeholder="YYYY-MM-DD"><br>
+        <label for="endDate">End Date:</label>
+        <input class="input" type="text" name="endDate" placeholder="YYYY-MM-DD"><br>
+        <input type="hidden" name="getPricing" value="FALSE"><br>
+        <input class="submit" type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="arrow">
+      <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+    </div>
+
+
     <div class="container">
 
         <!-- Page Header -->
