@@ -3,18 +3,13 @@ var router = express.Router();
 var request = require('request');
 var session = require('express-session');
 
-
-
-// request('http://www.google.com', function (error, response, body) {
-//   if (!error && response.statusCode == 200) {
-//     console.log(body) // Show the HTML for the Google homepage.
-//   }
-// })
+var masterConcepts = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Austin' });
 });
+
 
 
 var options = {
@@ -32,17 +27,20 @@ function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     var temp = JSON.parse(body);
     var info = temp.accommodations;
-
-    for (var j = 0; j < info.length; j++){
-
-    console.log(info[j]);
-    }
+    // for (var j = 0; j < info.length; j++){
+    // info[j];
+    // }
+  var levelOne = info[0].score;
+  var concepts = levelOne.conceptData;
+  console.log(concepts);
   }
 }
 
 request(options, callback);
 
 
+
 module.exports = router;
+
 
 
