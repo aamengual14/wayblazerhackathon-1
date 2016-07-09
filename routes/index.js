@@ -4,11 +4,6 @@ var request = require('request');
 var session = require('express-session');
 
 
-
-
-
-
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Austin' });
@@ -32,12 +27,12 @@ function callback(error, response, body) {
     var temp = JSON.parse(body);
     var info = temp.accommodations;
 
-    for (var j = 0; j < info.length; j++){
-
-    console.log(info[j]);
-
-}
-
+    // for (var j = 0; j < info.length; j++){
+    // info[j];
+    // }
+  var levelOne = info[0].score;
+  var concepts = levelOne.conceptData;
+  console.log(concepts);
   }
 }
 
