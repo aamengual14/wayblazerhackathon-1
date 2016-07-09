@@ -1,0 +1,29 @@
+$( document ).ready(function() {
+  var concepts = [];
+  var images = [
+    {
+      imageUrl: "/images/austin_main_adventure.JPG",
+      concepts: ["adventure", "water", "outdoors"]
+    },
+    {
+      imageUrl: "/images/austin_main_romance.jpg",
+      concepts: ["romance", "restaurants", "wine"]
+    },
+    {
+      imageUrl: "/images/austin_main_family.jpg",
+      concepts: ["family", "kids", "theme parks"]
+    },
+    {
+      imageUrl: "/images/austin_main_history.jpg",
+      concepts: ["history", "tours", "city"]
+    },
+    {
+      imageUrl: "/images/austin_main_nightlife.jpg",
+      concepts: ["nightlife", "clubs", "dancing"]
+    },
+    {
+      imageUrl: "/images/austin_main_relax.jpg",
+      concepts: ["relax", "spa", "massage"]
+    },
+  ];
+}
