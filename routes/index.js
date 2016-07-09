@@ -30,8 +30,14 @@ var options = {
 
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
-    var info = JSON.parse(body);
-    console.log(info.accommodations);
+    var temp = JSON.parse(body);
+    var info = temp.accommodations;
+
+    for (var j = 0; j < info.length; j++){
+
+    console.log(info[j]);
+
+}
 
   }
 }
