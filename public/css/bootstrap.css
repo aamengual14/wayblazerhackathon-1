@@ -6758,3 +6758,10 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/*MY STYLES*/
+
+.row img {
+  width: 700px;
+  height: 200px;
+}
