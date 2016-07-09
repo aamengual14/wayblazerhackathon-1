@@ -36,9 +36,7 @@ function callback(error, response, body) {
     for (var j = 0; j < info.length; j++){
 
     console.log(info[j]);
-
-}
-
+    }
   }
 }
 
