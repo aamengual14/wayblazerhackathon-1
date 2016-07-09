@@ -1,5 +1,21 @@
 
 <% include partials/header %>
+    <div id="userForm">
+     <form action="" method="get">
+       <label for="rooms">Rooms:</label>
+       <input class="input" type="text" name="rooms" placeholder="Enter the number of rooms needed"><br>
+       <label for="adults">Adults:</label>
+       <input class="input" type="text" name="adults" placeholder="Enter the number of adults taking this trip"><br>
+       <label for="Children">Children:</label>
+       <input class="input" type="text" name="children" placeholder="Enter the number of children taking this trip"><br>
+       <label for="startDate">Start Date:</label>
+       <input class="input" type="text" name="startDate" placeholder="YYYY-MM-DD"><br>
+       <label for="endDate">End Date:</label>
+       <input class="input" type="text" name="endDate" placeholder="YYYY-MM-DD"><br>
+       <input type="hidden" name="getPricing" value="FALSE"><br>
+       <input class="submit" type="submit" value="Submit">
+     </form>
+   </div>
 
     <div class="container">
         <div class="row">
@@ -9,37 +25,67 @@
         </div>
         <div class="row">
             <div class="col-md-4 portfolio-item">
-                <a href="#" class="button">
-                    <img class="img-responsive" src="/images/austin_main_adventure.JPG" alt="adventure">
+                <a href="#" class="button" id="button1">
+                    <img class="img-responsive" id="image1" src="/images/austin_main_adventure.JPG" alt="adventure">
+                    <img class="img-responsive" id="image2" src="/images/austin_main_romance.JPG" alt="romance">
+                    <img class="img-responsive" id="image3" src="/images/austin_main_family.JPG" alt="family">
+                    <img class="img-responsive" id="image4" src="/images/austin_main_history.JPG" alt="history">
+                    <img class="img-responsive" id="image5" src="/images/austin_main_nightlife.JPG" alt="nightlife">
+                    <img class="img-responsive" id="image6" src="/images/austin_main_relax.JPG" alt="relax">
                 </a>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#" class="button">
-                    <img class="img-responsive" src="/images/austin_main_romance.jpg" alt="adventure">
+                <a href="#" class="button" id="button2">
+                    <img class="img-responsive" id="image1" src="/images/austin_main_adventure.JPG" alt="adventure">
+                    <img class="img-responsive" id="image2" src="/images/austin_main_romance.JPG" alt="romance">
+                    <img class="img-responsive" id="image3" src="/images/austin_main_family.JPG" alt="family">
+                    <img class="img-responsive" id="image4" src="/images/austin_main_history.JPG" alt="history">
+                    <img class="img-responsive" id="image5" src="/images/austin_main_nightlife.JPG" alt="nightlife">
+                    <img class="img-responsive" id="image6" src="/images/austin_main_relax.JPG" alt="relax">
                 </a>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#" class="button">
-                    <img class="img-responsive" src="/images/austin_main_family.jpg" alt="adventure">
+                <a href="#" class="button" id="button3">
+                    <img class="img-responsive" id="image1" src="/images/austin_main_adventure.JPG" alt="adventure">
+                    <img class="img-responsive" id="image2" src="/images/austin_main_romance.JPG" alt="romance">
+                    <img class="img-responsive" id="image3" src="/images/austin_main_family.JPG" alt="family">
+                    <img class="img-responsive" id="image4" src="/images/austin_main_history.JPG" alt="history">
+                    <img class="img-responsive" id="image5" src="/images/austin_main_nightlife.JPG" alt="nightlife">
+                    <img class="img-responsive" id="image6" src="/images/austin_main_relax.JPG" alt="relax">
                 </a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 portfolio-item">
-                <a href="#" class="button">
-                    <img class="img-responsive" src="/images/austin_main_history.jpg" alt="adventure">
+                <a href="#" class="button" id="button4">
+                    <img class="img-responsive" id="image1" src="/images/austin_main_adventure.JPG" alt="adventure">
+                    <img class="img-responsive" id="image2" src="/images/austin_main_romance.JPG" alt="romance">
+                    <img class="img-responsive" id="image3" src="/images/austin_main_family.JPG" alt="family">
+                    <img class="img-responsive" id="image4" src="/images/austin_main_history.JPG" alt="history">
+                    <img class="img-responsive" id="image5" src="/images/austin_main_nightlife.JPG" alt="nightlife">
+                    <img class="img-responsive" id="image6" src="/images/austin_main_relax.JPG" alt="relax">
                 </a>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#" class="button">
-                    <img class="img-responsive" src="/images/austin_main_nightlife.JPG" alt="adventure">
+                <a href="#" class="button" id="button5">
+                    <img class="img-responsive" id="image1" src="/images/austin_main_adventure.JPG" alt="adventure">
+                    <img class="img-responsive" id="image2" src="/images/austin_main_romance.JPG" alt="romance">
+                    <img class="img-responsive" id="image3" src="/images/austin_main_family.JPG" alt="family">
+                    <img class="img-responsive" id="image4" src="/images/austin_main_history.JPG" alt="history">
+                    <img class="img-responsive" id="image5" src="/images/austin_main_nightlife.JPG" alt="nightlife">
+                    <img class="img-responsive" id="image6" src="/images/austin_main_relax.JPG" alt="relax">
                 </a>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#" class="button">
-                    <img class="img-responsive" src="/images/austin_main_relax.JPG" alt="adventure">
+                <a href="#" class="button" id="button6">
+                    <img class="img-responsive" id="image1" src="/images/austin_main_adventure.JPG" alt="adventure">
+                    <img class="img-responsive" id="image2" src="/images/austin_main_romance.JPG" alt="romance">
+                    <img class="img-responsive" id="image3" src="/images/austin_main_family.JPG" alt="family">
+                    <img class="img-responsive" id="image4" src="/images/austin_main_history.JPG" alt="history">
+                    <img class="img-responsive" id="image5" src="/images/austin_main_nightlife.JPG" alt="nightlife">
+                    <img class="img-responsive" id="image6" src="/images/austin_main_relax.JPG" alt="relax">
                 </a>
-
             </div>
         </div>
+
 <% include partials/footer %>
