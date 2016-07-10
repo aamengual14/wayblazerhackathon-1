@@ -102,7 +102,7 @@ $( document ).ready(function() {
   });
   $('.fa-chevron-down').click(function () {
     $('html,body').animate({
-        scrollTop: $(document).height()/2.5,
+        scrollTop: $(document).height()/2.1,
     }, 1000);
   });
 });
