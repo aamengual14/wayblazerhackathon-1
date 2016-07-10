@@ -9,49 +9,31 @@ var masterConcepts = [];
 /* GET home page. */
 
 
-
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Austin' });
 });
 
+
 router.post('/', function(req, res, next) {
   var masterBanana = req.body.concepts;
   console.log(masterBanana);
-  res.redirect('/');
-})
-
-var options = {
-  url: 'https://api.wayblazer.com/v1/accommodations/search?adults=2&children=0&rooms=1&destination=Austin,TX&tripType=none&startDate=2016-10-06T05:00:00.000Z&endDate=2016-10-10T05:00:00.000Z',
+  // res.redirect('/');
+  var options = {
+  url: 'https://api.wayblazer.com/v1/accommodations/search?adults=2&children=0&rooms=1&destination=Austin,TX&tripType=none&startDate=2016-10-06T05:00:00.000Z&endDate=2016-10-10T05:00:00.000Z&concepts=' + masterBanana,
   headers: {
     'x-api-key': 'Q6TaYnb0Z48qVIafFEfx481ev598ak1pApM6c0A8'
   }
-};
-
-function callback(error, response, body) {
-  if (!error && response.statusCode == 200) {
-    var temp = JSON.parse(body);
-    var info = temp.accommodations;
-
-<<<<<<< HEAD
-    // for (var j = 0; j < info.length; j++){
-    // info[j];
-    // }
-  var levelOne = info[0].score;
-  var concepts = levelOne.conceptData;
-=======
->>>>>>> 54675a65816aa61e2094b6e629c0c44efb0c482e
   }
-}
+  request(options, function(err, result, body){
+    if(!err) {
+      var temp = JSON.parse(body);
+      var info = temp.accommodations;
+      console.log(info);
+      res.render('results');
+    }
 
-request(options, callback);
-
-// router.post('/', function(req, res, next){
-
-
-
-//   res.render/redirect()
-// })
-
+  });
+})
 
 
 module.exports = router;
