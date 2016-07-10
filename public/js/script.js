@@ -1,315 +1,315 @@
-$( document ).ready(function() {
-  var conceptsArray = [];
-  var imagesArray1 = [
-    {
-      imageId: "image1",
-      concepts: ["adventure", "water", "outdoors"]
-    },
-    {
-      imageId: "image2",
-      concepts: ["romance", "restaurants", "wine"]
-    },
-    {
-      imageId: "image3",
-      concepts: ["family", "kids", "theme parks"]
-    },
-    {
-      imageId: "image4",
-      concepts: ["history", "tours", "city"]
-    },
-    {
-      imageId: "image5",
-      concepts: ["nightlife", "clubs", "dancing"]
-    },
-    {
-      imageId: "image6",
-      concepts: ["relax", "spa", "massage"]
-    },
-  ];
-  var imagesArray2 = [
-    {
-      imageId: "image7",
-      concepts: ["trail", "hiking", "outdoors"]
-    },
-    {
-      imageId: "image8",
-      concepts: ["romance", "restaurants", "wine"]
-    },
-    {
-      imageId: "image9",
-      concepts: ["family", "kids", "theme parks"]
-    },
-    {
-      imageId: "image10",
-      concepts: ["history", "tours", "city"]
-    },
-    {
-      imageId: "image11",
-      concepts: ["nightlife", "clubs", "dancing"]
-    },
-    {
-      imageId: "image12",
-      concepts: ["relax", "spa", "massage"]
-    },
-  ];
-  var imagesArray3 = [
-    {
-      imageId: "image13",
-      concepts: ["adventure", "water", "outdoors"]
-    },
-    {
-      imageId: "image14",
-      concepts: ["romance", "restaurants", "wine"]
-    },
-    {
-      imageId: "image15",
-      concepts: ["family", "kids", "theme parks"]
-    },
-    {
-      imageId: "image16",
-      concepts: ["history", "tours", "city"]
-    },
-    {
-      imageId: "image17",
-      concepts: ["nightlife", "clubs", "dancing"]
-    },
-    {
-      imageId: "image18",
-      concepts: ["relax", "spa", "massage"]
-    },
-  ];
-  var imagesArray4 = [
-    {
-      imageId: "image19",
-      concepts: ["adventure", "water", "outdoors"]
-    },
-    {
-      imageId: "image20",
-      concepts: ["romance", "restaurants", "wine"]
-    },
-    {
-      imageId: "image21",
-      concepts: ["family", "kids", "theme parks"]
-    },
-    {
-      imageId: "image22",
-      concepts: ["history", "tours", "city"]
-    },
-    {
-      imageId: "image23",
-      concepts: ["nightlife", "clubs", "dancing"]
-    },
-    {
-      imageId: "image24",
-      concepts: ["relax", "spa", "massage"]
-    },
-  ];
-  var imagesArray5 = [
-    {
-      imageId: "image25",
-      concepts: ["adventure", "water", "outdoors"]
-    },
-    {
-      imageId: "image26",
-      concepts: ["romance", "restaurants", "wine"]
-    },
-    {
-      imageId: "image27",
-      concepts: ["family", "kids", "theme parks"]
-    },
-    {
-      imageId: "image28",
-      concepts: ["history", "tours", "city"]
-    },
-    {
-      imageId: "image29",
-      concepts: ["nightlife", "clubs", "dancing"]
-    },
-    {
-      imageId: "image30",
-      concepts: ["relax", "spa", "massage"]
-    },
-  ];
-  var imagesArray6 = [
-    {
-      imageId: "image31",
-      concepts: ["adventure", "water", "outdoors"]
-    },
-    {
-      imageId: "image32",
-      concepts: ["romance", "restaurants", "wine"]
-    },
-    {
-      imageId: "image33",
-      concepts: ["family", "kids", "theme parks"]
-    },
-    {
-      imageId: "image34",
-      concepts: ["history", "tours", "city"]
-    },
-    {
-      imageId: "image35",
-      concepts: ["nightlife", "clubs", "dancing"]
-    },
-    {
-      imageId: "image36",
-      concepts: ["relax", "spa", "massage"]
-    },
-  ];
-  $('.button').children('.img-responsive').hide(200);
-  $('#button1').children('#' + imagesArray1[0].imageId).show(200);
-  $('#button2').children('#' + imagesArray2[0].imageId).show(200);
-  $('#button3').children('#' + imagesArray3[0].imageId).show(200);
-  $('#button4').children('#' + imagesArray4[0].imageId).show(200);
-  $('#button5').children('#' + imagesArray5[0].imageId).show(200);
-  $('#button6').children('#' + imagesArray6[0].imageId).show(200);
+  $( document ).ready(function() {
+    var conceptsArray = [];
+    var imagesArray1 = [
+      {
+        imageId: "image1",
+        concepts: ["adventure", "water", "outdoors"]
+      },
+      {
+        imageId: "image2",
+        concepts: ["romance", "restaurants", "wine"]
+      },
+      {
+        imageId: "image3",
+        concepts: ["family", "kids", "theme parks"]
+      },
+      {
+        imageId: "image4",
+        concepts: ["history", "tours", "city"]
+      },
+      {
+        imageId: "image5",
+        concepts: ["nightlife", "clubs", "dancing"]
+      },
+      {
+        imageId: "image6",
+        concepts: ["relax", "spa", "massage"]
+      },
+    ];
+    var imagesArray2 = [
+      {
+        imageId: "image7",
+        concepts: ["trail", "hiking", "outdoors"]
+      },
+      {
+        imageId: "image8",
+        concepts: ["romance", "restaurants", "wine"]
+      },
+      {
+        imageId: "image9",
+        concepts: ["family", "kids", "theme parks"]
+      },
+      {
+        imageId: "image10",
+        concepts: ["history", "tours", "city"]
+      },
+      {
+        imageId: "image11",
+        concepts: ["nightlife", "clubs", "dancing"]
+      },
+      {
+        imageId: "image12",
+        concepts: ["relax", "spa", "massage"]
+      },
+    ];
+    var imagesArray3 = [
+      {
+        imageId: "image13",
+        concepts: ["adventure", "water", "outdoors"]
+      },
+      {
+        imageId: "image14",
+        concepts: ["romance", "restaurants", "wine"]
+      },
+      {
+        imageId: "image15",
+        concepts: ["family", "kids", "theme parks"]
+      },
+      {
+        imageId: "image16",
+        concepts: ["history", "tours", "city"]
+      },
+      {
+        imageId: "image17",
+        concepts: ["nightlife", "clubs", "dancing"]
+      },
+      {
+        imageId: "image18",
+        concepts: ["relax", "spa", "massage"]
+      },
+    ];
+    var imagesArray4 = [
+      {
+        imageId: "image19",
+        concepts: ["adventure", "water", "outdoors"]
+      },
+      {
+        imageId: "image20",
+        concepts: ["romance", "restaurants", "wine"]
+      },
+      {
+        imageId: "image21",
+        concepts: ["family", "kids", "theme parks"]
+      },
+      {
+        imageId: "image22",
+        concepts: ["history", "tours", "city"]
+      },
+      {
+        imageId: "image23",
+        concepts: ["nightlife", "clubs", "dancing"]
+      },
+      {
+        imageId: "image24",
+        concepts: ["relax", "spa", "massage"]
+      },
+    ];
+    var imagesArray5 = [
+      {
+        imageId: "image25",
+        concepts: ["adventure", "water", "outdoors"]
+      },
+      {
+        imageId: "image26",
+        concepts: ["romance", "restaurants", "wine"]
+      },
+      {
+        imageId: "image27",
+        concepts: ["family", "kids", "theme parks"]
+      },
+      {
+        imageId: "image28",
+        concepts: ["history", "tours", "city"]
+      },
+      {
+        imageId: "image29",
+        concepts: ["nightlife", "clubs", "dancing"]
+      },
+      {
+        imageId: "image30",
+        concepts: ["relax", "spa", "massage"]
+      },
+    ];
+    var imagesArray6 = [
+      {
+        imageId: "image31",
+        concepts: ["adventure", "water", "outdoors"]
+      },
+      {
+        imageId: "image32",
+        concepts: ["romance", "restaurants", "wine"]
+      },
+      {
+        imageId: "image33",
+        concepts: ["family", "kids", "theme parks"]
+      },
+      {
+        imageId: "image34",
+        concepts: ["history", "tours", "city"]
+      },
+      {
+        imageId: "image35",
+        concepts: ["nightlife", "clubs", "dancing"]
+      },
+      {
+        imageId: "image36",
+        concepts: ["relax", "spa", "massage"]
+      },
+    ];
+    $('.button').children('.img-responsive').hide(200);
+    $('#button1').children('#' + imagesArray1[0].imageId).show(200);
+    $('#button2').children('#' + imagesArray2[0].imageId).show(200);
+    $('#button3').children('#' + imagesArray3[0].imageId).show(200);
+    $('#button4').children('#' + imagesArray4[0].imageId).show(200);
+    $('#button5').children('#' + imagesArray5[0].imageId).show(200);
+    $('#button6').children('#' + imagesArray6[0].imageId).show(200);
 
-  var indexButton1 = 0;
-  var indexButton2 = 0;
-  var indexButton3 = 0;
-  var indexButton4 = 0;
-  var indexButton5 = 0;
-  var indexButton6 = 0;
+    var indexButton1 = 0;
+    var indexButton2 = 0;
+    var indexButton3 = 0;
+    var indexButton4 = 0;
+    var indexButton5 = 0;
+    var indexButton6 = 0;
 
-  $('#button1').click(function(e) {
-      e.preventDefault();
-        $( this ).children('#' + imagesArray1[indexButton1].imageId).hide(200);
-        for (var i = 0; i < imagesArray1[indexButton1].concepts.length; i++){
-          conceptsArray.push(imagesArray1[indexButton1].concepts[i]);
+    $('#button1').click(function(e) {
+        e.preventDefault();
+          $( this ).children('#' + imagesArray1[indexButton1].imageId).hide(200);
+          for (var i = 0; i < imagesArray1[indexButton1].concepts.length; i++){
+            conceptsArray.push(imagesArray1[indexButton1].concepts[i]);
+            console.log(conceptsArray);
+          }
+          indexButton1++;
+          if(indexButton1 > 5){
+            indexButton1 = 0;
+          }
+          $( this ).children('#' + imagesArray1[indexButton1].imageId).show(200);
           console.log(conceptsArray);
-        }
-        indexButton1++;
+    });
+    $('#button2').click(function(e) {
+        e.preventDefault();
+          $( this ).children('#' + imagesArray2[indexButton2].imageId).hide(200);
+          for (var i = 0; i < imagesArray2[indexButton2].concepts.length; i++){
+            conceptsArray.push(imagesArray2[indexButton2].concepts[i]);
+            console.log(conceptsArray);
+          }
+          indexButton2++;
+          if(indexButton2 > 5){
+            indexButton2 = 0;
+          }
+          $( this ).children('#' + imagesArray2[indexButton2].imageId).show(200);
+          console.log(conceptsArray);
+    });
+    $('#button3').click(function(e) {
+        e.preventDefault();
+          $( this ).children('#' + imagesArray3[indexButton3].imageId).hide(200);
+          for (var i = 0; i < imagesArray3[indexButton3].concepts.length; i++){
+            conceptsArray.push(imagesArray3[indexButton3].concepts[i]);
+          }
+          indexButton3++;
+          if(indexButton3 > 5){
+            indexButton3 = 0;
+          }
+          $( this ).children('#' + imagesArray3[indexButton3].imageId).show(200);
+          console.log(conceptsArray);
+    });
+    $('#button4').click(function(e) {
+        e.preventDefault();
+          $( this ).children('#' + imagesArray4[indexButton4].imageId).hide(200);
+          for (var i = 0; i < imagesArray4[indexButton4].concepts.length; i++){
+            conceptsArray.push(imagesArray4[indexButton4].concepts[i]);
+          }
+          indexButton4++;
+          if(indexButton4 > 5){
+            indexButton4 = 0;
+          }
+          $( this ).children('#' + imagesArray4[indexButton4].imageId).show(200);
+          console.log(conceptsArray);
+    });
+    $('#button5').click(function(e) {
+        e.preventDefault();
+          $( this ).children('#' + imagesArray5[indexButton5].imageId).hide(200);
+          for (var i = 0; i < imagesArray5[indexButton5].concepts.length; i++){
+            conceptsArray.push(imagesArray5[indexButton5].concepts[i]);
+          }
+          indexButton5++;
+          if(indexButton5 > 5){
+            indexButton5 = 0;
+          }
+          $( this ).children('#' + imagesArray5[indexButton5].imageId).show(200);
+          console.log(conceptsArray);
+    });
+    $('#button6').click(function(e) {
+        e.preventDefault();
+          $( this ).children('#' + imagesArray6[indexButton6].imageId).hide(200);
+          for (var i = 0; i < imagesArray6[indexButton6].concepts.length; i++){
+            conceptsArray.push(imagesArray6[indexButton6].concepts[i]);
+          }
+          indexButton6++;
+          if(indexButton6 > 5){
+            indexButton6 = 0;
+          }
+          $( this ).children('#' + imagesArray6[indexButton6].imageId).show(200);
+          console.log(conceptsArray);
+    });
+
+    $('.refresh').click(function(e) {
+        e.preventDefault();
+        $( '#button1' ).children('#' + imagesArray1[indexButton1].imageId).hide(200);
+        indexButton1 ++;
         if(indexButton1 > 5){
-          indexButton1 = 0;
+            indexButton1 = 0;
         }
-        $( this ).children('#' + imagesArray1[indexButton1].imageId).show(200);
-        console.log(conceptsArray);
-  });
-  $('#button2').click(function(e) {
-      e.preventDefault();
-        $( this ).children('#' + imagesArray2[indexButton2].imageId).hide(200);
-        for (var i = 0; i < imagesArray2[indexButton2].concepts.length; i++){
-          conceptsArray.push(imagesArray2[indexButton2].concepts[i]);
-          console.log(conceptsArray);
-        }
-        indexButton2++;
+        $( '#button1' ).children('#' + imagesArray1[indexButton1].imageId).show(200);
+
+        $( '#button2' ).children('#' + imagesArray2[indexButton2].imageId).hide(200);
+        indexButton2 ++;
         if(indexButton2 > 5){
-          indexButton2 = 0;
+            indexButton2 = 0;
         }
-        $( this ).children('#' + imagesArray2[indexButton2].imageId).show(200);
-        console.log(conceptsArray);
-  });
-  $('#button3').click(function(e) {
-      e.preventDefault();
-        $( this ).children('#' + imagesArray3[indexButton3].imageId).hide(200);
-        for (var i = 0; i < imagesArray3[indexButton3].concepts.length; i++){
-          conceptsArray.push(imagesArray3[indexButton3].concepts[i]);
-        }
-        indexButton3++;
+        $( '#button2' ).children('#' + imagesArray2[indexButton2].imageId).show(200);
+
+        $( '#button3' ).children('#' + imagesArray3[indexButton3].imageId).hide(200);
+        indexButton3 ++;
         if(indexButton3 > 5){
-          indexButton3 = 0;
+            indexButton3 = 0;
         }
-        $( this ).children('#' + imagesArray3[indexButton3].imageId).show(200);
-        console.log(conceptsArray);
-  });
-  $('#button4').click(function(e) {
-      e.preventDefault();
-        $( this ).children('#' + imagesArray4[indexButton4].imageId).hide(200);
-        for (var i = 0; i < imagesArray4[indexButton4].concepts.length; i++){
-          conceptsArray.push(imagesArray4[indexButton4].concepts[i]);
-        }
-        indexButton4++;
+        $( '#button3' ).children('#' + imagesArray3[indexButton3].imageId).show(200);
+
+        $( '#button4' ).children('#' + imagesArray4[indexButton4].imageId).hide(200);
+        indexButton4 ++;
         if(indexButton4 > 5){
-          indexButton4 = 0;
+            indexButton4 = 0;
         }
-        $( this ).children('#' + imagesArray4[indexButton4].imageId).show(200);
-        console.log(conceptsArray);
-  });
-  $('#button5').click(function(e) {
-      e.preventDefault();
-        $( this ).children('#' + imagesArray5[indexButton5].imageId).hide(200);
-        for (var i = 0; i < imagesArray5[indexButton5].concepts.length; i++){
-          conceptsArray.push(imagesArray5[indexButton5].concepts[i]);
-        }
-        indexButton5++;
+        $( '#button4' ).children('#' + imagesArray4[indexButton4].imageId).show(200);
+
+        $( '#button5' ).children('#' + imagesArray5[indexButton5].imageId).hide(200);
+        indexButton5 ++;
         if(indexButton5 > 5){
-          indexButton5 = 0;
+            indexButton5 = 0;
         }
-        $( this ).children('#' + imagesArray5[indexButton5].imageId).show(200);
-        console.log(conceptsArray);
-  });
-  $('#button6').click(function(e) {
-      e.preventDefault();
-        $( this ).children('#' + imagesArray6[indexButton6].imageId).hide(200);
-        for (var i = 0; i < imagesArray6[indexButton6].concepts.length; i++){
-          conceptsArray.push(imagesArray6[indexButton6].concepts[i]);
-        }
-        indexButton6++;
+        $( '#button5' ).children('#' + imagesArray5[indexButton5].imageId).show(200);
+
+        $( '#button6' ).children('#' + imagesArray6[indexButton6].imageId).hide(200);
+        indexButton6 ++;
         if(indexButton6 > 5){
-          indexButton6 = 0;
+            indexButton6 = 0;
         }
-        $( this ).children('#' + imagesArray6[indexButton6].imageId).show(200);
-        console.log(conceptsArray);
-  });
+        $( '#button6' ).children('#' + imagesArray6[indexButton6].imageId).show(200);
+      });
 
-  $('.refresh').click(function(e) {
+
+    $('#arrow').click(function () {
       e.preventDefault();
-      $( '#button1' ).children('#' + imagesArray1[indexButton1].imageId).hide(200);
-      indexButton1 ++;
-      if(indexButton1 > 5){
-          indexButton1 = 0;
-      }
-      $( '#button1' ).children('#' + imagesArray1[indexButton1].imageId).show(200);
+      $('html,body').animate({
+          scrollTop: $(document).height()/1.9,
+      }, 1000);
+    });
 
-      $( '#button2' ).children('#' + imagesArray2[indexButton2].imageId).hide(200);
-      indexButton2 ++;
-      if(indexButton2 > 5){
-          indexButton2 = 0;
-      }
-      $( '#button2' ).children('#' + imagesArray2[indexButton2].imageId).show(200);
+    $('#banana').submit(function(e) {
+          var str = conceptsArray.join([separator = ',']);
+          $('#hiddenbanana').val(str);
 
-      $( '#button3' ).children('#' + imagesArray3[indexButton3].imageId).hide(200);
-      indexButton3 ++;
-      if(indexButton3 > 5){
-          indexButton3 = 0;
-      }
-      $( '#button3' ).children('#' + imagesArray3[indexButton3].imageId).show(200);
-
-      $( '#button4' ).children('#' + imagesArray4[indexButton4].imageId).hide(200);
-      indexButton4 ++;
-      if(indexButton4 > 5){
-          indexButton4 = 0;
-      }
-      $( '#button4' ).children('#' + imagesArray4[indexButton4].imageId).show(200);
-
-      $( '#button5' ).children('#' + imagesArray5[indexButton5].imageId).hide(200);
-      indexButton5 ++;
-      if(indexButton5 > 5){
-          indexButton5 = 0;
-      }
-      $( '#button5' ).children('#' + imagesArray5[indexButton5].imageId).show(200);
-
-      $( '#button6' ).children('#' + imagesArray6[indexButton6].imageId).hide(200);
-      indexButton6 ++;
-      if(indexButton6 > 5){
-          indexButton6 = 0;
-      }
-      $( '#button6' ).children('#' + imagesArray6[indexButton6].imageId).show(200);
     });
 
 
-  $('#arrow').click(function () {
-    $('html,body').animate({
-        debugger
-        scrollTop: $(document).height()/1.9,
-    }, 1000);
   });
-
-  $('#banana').submit(function(e) {
-        var str = conceptsArray.join([separator = ',']);
-        $('#hiddenbanana').val(str);
-
-  });
-
-
-});
