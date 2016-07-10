@@ -6829,3 +6829,7 @@ button.close {
 #userForm .submit {
   margin-bottom: 4%;
 }
+
+#help {
+  text-align: center;
+}
