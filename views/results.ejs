@@ -1,19 +1,94 @@
 <% include partials/header %>
 
-  <div class="oneResult">
+<div class="oneResult">
     <span class ="imageResult">
-      <h2><img src="<%- body.accommodations[0].image.urls.original %>" alt=""></h2>
+      <img src="<%- body.accommodations[0].image.urls.original %>" alt="">
     </span>
     <span class ="information">
+      <h3 class="hotelName"><%- body.accommodations[0].attraction.name %></h3>
       <ul class ="infoList">
-        <li class="col-md-3">Name: <%- body.accommodations[0].attraction.name %></li>
-        <li class="col-md-3">Property Type: <%- body.accommodations[0].attraction.propertyType %></li>
-        <li class="col-md-3">Star Rating: <%- body.accommodations[0].attraction.starRating %></li>
-        <li class="col-md-3">Minimum Rate: <%- body.accommodations[0].attraction.minRate %></li>
+        <li>Property Type: <%- body.accommodations[0].attraction.propertyType %></li>
+        <li>Star Rating: <%- body.accommodations[0].attraction.starRating %></li>
+        <li>Minimum Rate: <%- body.accommodations[0].attraction.minRate %></li>
     </ul>
+    <% var resultsConcepts = body.accommodations[0].score.conceptData %>
+    <% for (i = 0; i < 6; i++) { %>
+        <p class="concepts"><%- resultsConcepts[i].neighborConcept %></p>
+    <%  } %>
     </span>
   </div><br />
 
+<div class="oneResult">
+    <span class ="imageResult">
+      <img src="<%- body.accommodations[1].image.urls.original %>" alt="">
+    </span>
+    <span class ="information">
+      <h3 class="hotelName"><%- body.accommodations[1].attraction.name %></h3>
+      <ul class ="infoList">
+        <li>Property Type: <%- body.accommodations[1].attraction.propertyType %></li>
+        <li>Star Rating: <%- body.accommodations[1].attraction.starRating %></li>
+        <li>Minimum Rate: <%- body.accommodations[1].attraction.minRate %></li>
+    </ul>
+    <% var resultsConcepts = body.accommodations[1].score.conceptData %>
+    <% for (i = 0; i < 6; i++) { %>
+        <p class="concepts"><%- resultsConcepts[i].neighborConcept %></p>
+    <%  } %>
+    </span>
+  </div><br />
+
+  <div class="oneResult">
+    <span class ="imageResult">
+      <img src="<%- body.accommodations[2].image.urls.original %>" alt="">
+    </span>
+    <span class ="information">
+      <h3 class="hotelName"><%- body.accommodations[2].attraction.name %></h3>
+      <ul class ="infoList">
+        <li>Property Type: <%- body.accommodations[2].attraction.propertyType %></li>
+        <li>Star Rating: <%- body.accommodations[2].attraction.starRating %></li>
+        <li>Minimum Rate: <%- body.accommodations[2].attraction.minRate %></li>
+    </ul>
+    <% var resultsConcepts = body.accommodations[2].score.conceptData %>
+    <% for (i = 0; i < 6; i++) { %>
+        <p class="concepts"><%- resultsConcepts[i].neighborConcept %></p>
+    <%  } %>
+    </span>
+  </div><br />
+
+  <div class="oneResult">
+    <span class ="imageResult">
+      <img src="<%- body.accommodations[3].image.urls.original %>" alt="">
+    </span>
+    <span class ="information">
+      <h3 class="hotelName"><%- body.accommodations[3].attraction.name %></h3>
+      <ul class ="infoList">
+        <li>Property Type: <%- body.accommodations[3].attraction.propertyType %></li>
+        <li>Star Rating: <%- body.accommodations[3].attraction.starRating %></li>
+        <li>Minimum Rate: <%- body.accommodations[3].attraction.minRate %></li>
+    </ul>
+    <% var resultsConcepts = body.accommodations[3].score.conceptData %>
+    <% for (i = 0; i < 6; i++) { %>
+        <p class="concepts"><%- resultsConcepts[i].neighborConcept %></p>
+    <%  } %>
+    </span>
+  </div><br />
+
+<div class="oneResult">
+    <span class ="imageResult">
+      <img src="<%- body.accommodations[4].image.urls.original %>" alt="">
+    </span>
+    <span class ="information">
+      <h3 class="hotelName"><%- body.accommodations[4].attraction.name %></h3>
+      <ul class ="infoList">
+        <li>Property Type: <%- body.accommodations[4].attraction.propertyType %></li>
+        <li>Star Rating: <%- body.accommodations[4].attraction.starRating %></li>
+        <li>Minimum Rate: <%- body.accommodations[4].attraction.minRate %></li>
+    </ul>
+    <% var resultsConcepts = body.accommodations[4].score.conceptData %>
+    <% for (i = 0; i < 6; i++) { %>
+        <p class="concepts"><%- resultsConcepts[i].neighborConcept %></p>
+    <%  } %>
+    </span>
+  </div><br />
 
 
 
