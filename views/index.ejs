@@ -2,7 +2,7 @@
 <% include partials/header %>
     <!-- Page Content -->
     <div id="userForm">
-      <form action="" method="get">
+      <form action="" method="">
         <label for="rooms">Rooms:</label>
         <input class="input" type="text" name="rooms" placeholder="Enter the number of rooms needed"><br>
         <label for="adults">Adults:</label>
@@ -90,6 +90,9 @@
                     <img class="img-responsive" id="image6" src="/images/austin_main_relax.JPG" alt="relax">
                 </a>
             </div>
+            <form action="/" method="POST">
+              <input class="submit results" type="submit" value="View Results">
+            </form>
         </div>
 
 <% include partials/footer %>

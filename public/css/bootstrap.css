@@ -6787,9 +6787,15 @@ button.close {
   cursor: pointer;
 }
 
+.results {
+  margin-left: 400px;
+}
+
 #userForm .input{
   width: 340px;
+  height: 31.2px;
   display: block;
+  border: 1px solid #000;
 }
 
 #userForm label {
@@ -6799,7 +6805,13 @@ button.close {
 #userForm {
   padding-left: 35%;
   border: 2px solid #757575;
-  background-color: #f0f0f0;
+  /*background-color: #f0f0f0;*/
+  background-image: url('coverimage.png');
+  background-repeat:no-repeat;
+  /*background-size:contain;*/
+  background-position:center;
+  /*height: 600px;*/
+  background-size: cover;
   padding-bottom: 10px;
 }
 
