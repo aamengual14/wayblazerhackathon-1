@@ -28,7 +28,7 @@ router.post('/', function(req, res, next) {
       var temp = JSON.parse(body);
       var info = temp.accommodations;
       console.log(info);
-      res.render('results', {});
+      res.render('results', {body: JSON.parse(body)});
     }
 
   });
