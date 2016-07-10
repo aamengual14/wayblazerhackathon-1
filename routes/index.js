@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
   var masterBanana = req.body.concepts;
-  console.log(masterBanana);
+  // console.log(masterBanana);
   var options = {
   url: 'https://api.wayblazer.com/v1/accommodations/search?adults=2&children=0&rooms=1&destination=Austin,TX&tripType=none&startDate=2016-10-06T05:00:00.000Z&endDate=2016-10-10T05:00:00.000Z&concepts=' + masterBanana,
   headers: {
