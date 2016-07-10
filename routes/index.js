@@ -17,7 +17,6 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
   var masterBanana = req.body.concepts;
   console.log(masterBanana);
-  // res.redirect('/');
   var options = {
   url: 'https://api.wayblazer.com/v1/accommodations/search?adults=2&children=0&rooms=1&destination=Austin,TX&tripType=none&startDate=2016-10-06T05:00:00.000Z&endDate=2016-10-10T05:00:00.000Z&concepts=' + masterBanana,
   headers: {
@@ -29,7 +28,7 @@ router.post('/', function(req, res, next) {
       var temp = JSON.parse(body);
       var info = temp.accommodations;
       console.log(info);
-      res.render('results');
+      res.render('results', {body: JSON.parse(body)});
     }
 
   });
@@ -37,6 +36,3 @@ router.post('/', function(req, res, next) {
 
 
 module.exports = router;
-
-
-
