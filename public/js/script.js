@@ -173,9 +173,9 @@ $( document ).ready(function() {
 
   $('#button1').click(function(e) {
       e.preventDefault();
-        $( this ).children('#' + imagesArray[indexButton1].imageId).hide(200);
-        for (var i = 0; i < imagesArray[indexButton1].concepts.length; i++){
-          conceptsArray.push(imagesArray[indexButton1].concepts[i]);
+        $( this ).children('#' + imagesArray1[indexButton1].imageId).hide(200);
+        for (var i = 0; i < imagesArray1[indexButton1].concepts.length; i++){
+          conceptsArray.push(imagesArray1[indexButton1].concepts[i]);
           console.log(conceptsArray);
         }
         indexButton1++;
@@ -299,3 +299,14 @@ $( document ).ready(function() {
   });
 
 });
+
+$('#banana').click(function(e) {
+      e.preventDefault();
+      // var unique = array.filter(function(elem, index, self){
+      //   return index == self.indexOf(elem);
+      // })
+      var str = conceptsArray.join([separator = ',%20']);
+      $(this).val(str);
+
+      console.log(str);
+  });
