@@ -6789,7 +6789,7 @@ button.close {
 
 /*#arrow {
   background-color: #333;
-  color: #777;
+  color: #7€77;
   text-align: center;
   padding: 4px 40px;
   margin-left: 107px;
@@ -6803,6 +6803,64 @@ button.close {
   margin-left: 500px;
 }
 
+.oneResult{
+  clear: left;
+  background-color: red;
+  margin: 3px;
+
+}
+
+.imageResult{
+  float: left;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.imageResult img{
+  width: 500px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+.information{
+  float: left;
+  text-align: left;
+  padding-left: 50px;
+  /*margin-right: 300px;*/
+
+}
+
+.infoList {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+.infoList li {
+    display: block;
+    width: 300px;
+    margin-right: auto;
+    text-align: left;
+    padding: 0;
+}
+
+.hotelName {
+  font-size: 40px;
+  text-align: left;
+}
+
+.concepts {
+  background-color: #80aaff;
+  color: white;
+  border: 3px solid;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 18px;
+}
+
+
+
+
 #userForm .input{
   width: 340px;
   height: 31.2px;
@@ -6815,7 +6873,7 @@ button.close {
 }
 
 #userForm {
-  padding: 100px 0px 100px 600px;
+  padding: 100px 0px 100px 800px;
   border: 2px solid #757575;
   /*background-color: #f0f0f0;*/
   background-image: url('coverimage.png');
@@ -6824,6 +6882,7 @@ button.close {
   background-position:center;
   /*height: 600px;*/
   background-size: cover;
+  color: #000;
 }
 
 #userForm .submit {
