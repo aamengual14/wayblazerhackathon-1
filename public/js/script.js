@@ -47,6 +47,7 @@ $( document ).ready(function() {
         $( this ).children('#' + imagesArray[indexButton1].imageId).hide(200);
         for (var i = 0; i < imagesArray[indexButton1].concepts.length; i++){
           conceptsArray.push(imagesArray[indexButton1].concepts[i]);
+          console.log(conceptsArray);
         }
         indexButton1++;
         if(indexButton1 > 5){
