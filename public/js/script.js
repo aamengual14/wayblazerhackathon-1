@@ -190,6 +190,7 @@ $( document ).ready(function() {
         $( this ).children('#' + imagesArray2[indexButton2].imageId).hide(200);
         for (var i = 0; i < imagesArray2[indexButton2].concepts.length; i++){
           conceptsArray.push(imagesArray2[indexButton2].concepts[i]);
+          console.log(conceptsArray);
         }
         indexButton2++;
         if(indexButton2 > 5){
