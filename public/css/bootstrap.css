@@ -6803,6 +6803,32 @@ button.close {
   margin-left: 500px;
 }
 
+.imageResult{
+  /*float: left;*/
+  width: 30%;
+  text-align: left;
+}
+
+.information{
+  /*float: right;*/
+  text-align: right;
+  margin-right: 5%;
+}
+
+.infoList {
+  list-style: none;
+}
+
+.infoList li {
+    display: block;
+    width: 60px;
+}
+
+
+
+
+
+
 #userForm .input{
   width: 340px;
   height: 31.2px;
