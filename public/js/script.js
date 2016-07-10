@@ -3,53 +3,53 @@
     var imagesArray1 = [
       {
         imageId: "image1",
-        concepts: ["adventure", "water", "outdoors"]
+        concepts: ["nightlife", "romance", "downtown"]
       },
       {
         imageId: "image2",
-        concepts: ["romance", "restaurants", "wine"]
+        concepts: ["wine", "restaurants", "scenic", "dining", "romance"]
       },
       {
         imageId: "image3",
-        concepts: ["family", "kids", "theme parks"]
+        concepts: ["family", "kids", "themeparks", "water"]
       },
       {
         imageId: "image4",
-        concepts: ["history", "tours", "city"]
+        concepts: ["history", "tours", "city", "museums"]
       },
       {
         imageId: "image5",
-        concepts: ["nightlife", "clubs", "dancing"]
+        concepts: ["nightlife", "clubs", "dancing", "theatre"]
       },
       {
         imageId: "image6",
-        concepts: ["relax", "spa", "massage"]
+        concepts: ["adventure", "outdoors", "ziplining"]
       },
     ];
     var imagesArray2 = [
       {
         imageId: "image7",
-        concepts: ["trail", "hiking", "outdoors"]
+        concepts: ["kids", "family", "museums"]
       },
       {
         imageId: "image8",
-        concepts: ["romance", "restaurants", "wine"]
+        concepts: ["skydiving", "adventure"]
       },
       {
         imageId: "image9",
-        concepts: ["family", "kids", "theme parks"]
+        concepts: ["daning", "scenic", "city"]
       },
       {
         imageId: "image10",
-        concepts: ["history", "tours", "city"]
+        concepts: ["lake", "boating", "party"]
       },
       {
         imageId: "image11",
-        concepts: ["nightlife", "clubs", "dancing"]
+        concepts: ["hotels", "dining", "cocktails"]
       },
       {
         imageId: "image12",
-        concepts: ["relax", "spa", "massage"]
+        concepts: ["relaxation", "spa", "massage"]
       },
     ];
     var imagesArray3 = [
@@ -59,11 +59,11 @@
       },
       {
         imageId: "image14",
-        concepts: ["romance", "restaurants", "wine"]
+        concepts: ["coffee", "dining", "local"]
       },
       {
         imageId: "image15",
-        concepts: ["family", "kids", "theme parks"]
+        concepts: ["pool", "hotel", "rooftop"]
       },
       {
         imageId: "image16",
@@ -71,85 +71,85 @@
       },
       {
         imageId: "image17",
-        concepts: ["nightlife", "clubs", "dancing"]
+        concepts: ["nightlife", "clubs", "dancing", "theatre", "live", "music"]
       },
       {
         imageId: "image18",
-        concepts: ["relax", "spa", "massage"]
+        concepts: ["dining", "scenic", "romantic"]
       },
     ];
     var imagesArray4 = [
       {
         imageId: "image19",
-        concepts: ["adventure", "water", "outdoors"]
+        concepts: ["romance", "wine", "dining"]
       },
       {
         imageId: "image20",
-        concepts: ["romance", "restaurants", "wine"]
+        concepts: ["sailing", "water", "outdoors"]
       },
       {
         imageId: "image21",
-        concepts: ["family", "kids", "theme parks"]
+        concepts: ["rock-climbing", "adventure", "outdoors"]
       },
       {
         imageId: "image22",
-        concepts: ["history", "tours", "city"]
+        concepts: ["live", "music", "city"]
       },
       {
         imageId: "image23",
-        concepts: ["nightlife", "clubs", "dancing"]
+        concepts: ["senic", "yoga", "parks"]
       },
       {
         imageId: "image24",
-        concepts: ["relax", "spa", "massage"]
+        concepts: ["health", "exercise"]
       },
     ];
     var imagesArray5 = [
       {
         imageId: "image25",
-        concepts: ["adventure", "water", "outdoors"]
+        concepts: ["spa", "relax", "massage"]
       },
       {
         imageId: "image26",
-        concepts: ["romance", "restaurants", "wine"]
+        concepts: ["tours", "landmarks", "local", "historic"]
       },
       {
         imageId: "image27",
-        concepts: ["family", "kids", "theme parks"]
+        concepts: ["museum", "art", "city"]
       },
       {
         imageId: "image28",
-        concepts: ["history", "tours", "city"]
+        concepts: ["dancing", "country", "nightlife"]
       },
       {
         imageId: "image29",
-        concepts: ["nightlife", "clubs", "dancing"]
+        concepts: ["spa", "relax", "massage"]
       },
       {
         imageId: "image30",
-        concepts: ["relax", "spa", "massage"]
+        concepts: ["dining", "scenic"]
       },
     ];
     var imagesArray6 = [
       {
         imageId: "image31",
-        concepts: ["adventure", "water", "outdoors"]
+        concepts: ["yoga", "exercise", "outdoors"]
       },
       {
         imageId: "image32",
-        concepts: ["romance", "restaurants", "wine"]
+        concepts: ["romance", "venue", "wedding"]
       },
       {
         imageId: "image33",
-        concepts: ["family", "kids", "theme parks"]
+        concepts: ["golf", "outdoors"]
       },
       {
         imageId: "image34",
-        concepts: ["history", "tours", "city"]
+        concepts: ["romance", "venue", "wedding"]
       },
       {
         imageId: "image35",
-        concepts: ["nightlife", "clubs", "dancing"]
+        concepts: ["kids", "museum", "finally"]
       },
       {
         imageId: "image36",
@@ -298,7 +298,7 @@
       });
 
 
-    $('#arrow').click(function () {
+    $('#arrow').click(function (e) {
       e.preventDefault();
       $('html,body').animate({
           scrollTop: $(document).height()/1.9,
