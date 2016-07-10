@@ -196,6 +196,7 @@ $( document ).ready(function() {
           indexButton2 = 0;
         }
         $( this ).children('#' + imagesArray2[indexButton2].imageId).show(200);
+        console.log(conceptsArray);
   });
   $('#button3').click(function(e) {
       e.preventDefault();
@@ -208,6 +209,7 @@ $( document ).ready(function() {
           indexButton3 = 0;
         }
         $( this ).children('#' + imagesArray3[indexButton3].imageId).show(200);
+        console.log(conceptsArray);
   });
   $('#button4').click(function(e) {
       e.preventDefault();
@@ -220,6 +222,7 @@ $( document ).ready(function() {
           indexButton4 = 0;
         }
         $( this ).children('#' + imagesArray4[indexButton4].imageId).show(200);
+        console.log(conceptsArray);
   });
   $('#button5').click(function(e) {
       e.preventDefault();
@@ -232,6 +235,7 @@ $( document ).ready(function() {
           indexButton5 = 0;
         }
         $( this ).children('#' + imagesArray5[indexButton5].imageId).show(200);
+        console.log(conceptsArray);
   });
   $('#button6').click(function(e) {
       e.preventDefault();
@@ -244,6 +248,7 @@ $( document ).ready(function() {
           indexButton6 = 0;
         }
         $( this ).children('#' + imagesArray6[indexButton6].imageId).show(200);
+        console.log(conceptsArray);
   });
 
   $('.refresh').click(function(e) {
@@ -298,15 +303,13 @@ $( document ).ready(function() {
     }, 1000);
   });
 
+  $('#banana').submit(function(e) {
+        var str = conceptsArray.join([separator = ',']);
+        $('#hiddenbanana').val(str);
+
+  });
+
+
 });
 
-$('#banana').click(function(e) {
-      e.preventDefault();
-      // var unique = array.filter(function(elem, index, self){
-      //   return index == self.indexOf(elem);
-      // })
-      var str = conceptsArray.join([separator = ',%20']);
-      $(this).val(str);
 
-      console.log(str);
-  });
