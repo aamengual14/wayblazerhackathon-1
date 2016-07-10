@@ -298,12 +298,12 @@ $( document ).ready(function() {
     });
 
 
-  $('#arrow').click(function () {
-    $('html,body').animate({
-        debugger
-        scrollTop: $(document).height()/1.9,
-    }, 1000);
-  });
+    $('#arrow').click(function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(document).height()/1.9,
+        }, 1000);
+      });
 
   $('#banana').submit(function(e) {
         var str = conceptsArray.join([separator = ',']);
