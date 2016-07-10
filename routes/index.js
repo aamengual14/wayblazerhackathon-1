@@ -10,7 +10,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Austin' });
 });
 
-
+router.post('/', function(req, res, next) {
+  console.log(req.body.concepts);
+})
 
 var options = {
   url: 'https://api.wayblazer.com/v1/accommodations/search?adults=2&children=0&rooms=1&destination=Austin,TX&tripType=none&startDate=2016-10-06T05:00:00.000Z&endDate=2016-10-10T05:00:00.000Z',
@@ -32,7 +34,6 @@ function callback(error, response, body) {
     // }
   var levelOne = info[0].score;
   var concepts = levelOne.conceptData;
-  console.log(concepts);
   }
 }
 

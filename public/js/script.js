@@ -299,3 +299,14 @@ $( document ).ready(function() {
   });
 
 });
+
+$('#banana').click(function(e) {
+      e.preventDefault();
+      // var unique = array.filter(function(elem, index, self){
+      //   return index == self.indexOf(elem);
+      // })
+      var str = conceptsArray.join([separator = ',%20']);
+      $(this).val(str);
+
+      console.log(str);
+  });
