@@ -298,8 +298,9 @@ $( document ).ready(function() {
     });
 
 
-  $('.arrow').click(function () {
+  $('#arrow').click(function () {
     $('html,body').animate({
+        debugger
         scrollTop: $(document).height()/1.9,
     }, 1000);
   });
