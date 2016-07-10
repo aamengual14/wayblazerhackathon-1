@@ -297,6 +297,50 @@
         $( '#button6' ).children('#' + imagesArray6[indexButton6].imageId).show(700);
       });
 
+    $('#arrow').click(function(e) {
+        e.preventDefault();
+        $( '#button1' ).children('#' + imagesArray1[indexButton1].imageId).hide(200);
+        indexButton1 ++;
+        if(indexButton1 > 5){
+            indexButton1 = 0;
+        }
+        $( '#button1' ).children('#' + imagesArray1[indexButton1].imageId).show(200);
+
+        $( '#button2' ).children('#' + imagesArray2[indexButton2].imageId).hide(300);
+        indexButton2 ++;
+        if(indexButton2 > 5){
+            indexButton2 = 0;
+        }
+        $( '#button2' ).children('#' + imagesArray2[indexButton2].imageId).show(300);
+
+        $( '#button3' ).children('#' + imagesArray3[indexButton3].imageId).hide(400);
+        indexButton3 ++;
+        if(indexButton3 > 5){
+            indexButton3 = 0;
+        }
+        $( '#button3' ).children('#' + imagesArray3[indexButton3].imageId).show(400);
+
+        $( '#button4' ).children('#' + imagesArray4[indexButton4].imageId).hide(500);
+        indexButton4 ++;
+        if(indexButton4 > 5){
+            indexButton4 = 0;
+        }
+        $( '#button4' ).children('#' + imagesArray4[indexButton4].imageId).show(500);
+
+        $( '#button5' ).children('#' + imagesArray5[indexButton5].imageId).hide(600);
+        indexButton5 ++;
+        if(indexButton5 > 5){
+            indexButton5 = 0;
+        }
+        $( '#button5' ).children('#' + imagesArray5[indexButton5].imageId).show(600);
+
+        $( '#button6' ).children('#' + imagesArray6[indexButton6].imageId).hide(700);
+        indexButton6 ++;
+        if(indexButton6 > 5){
+            indexButton6 = 0;
+        }
+        $( '#button6' ).children('#' + imagesArray6[indexButton6].imageId).show(700);
+      });
 
     $('#arrow').click(function (e) {
       e.preventDefault();
