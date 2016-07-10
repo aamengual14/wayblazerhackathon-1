@@ -6781,21 +6781,21 @@ button.close {
 
 .submit {
   background-color: #333;
-  color: #777;
+  color: #fff;
   text-align: center;
   padding: 4px 40px;
   margin-left: 107px;
 }
 
-#arrow {
+/*#arrow {
   background-color: #333;
   color: #777;
   text-align: center;
   padding: 4px 40px;
   margin-left: 107px;
-}
+}*/
 
-#arrow:hover {
+.arrow:hover {
   cursor: pointer;
 }
 
