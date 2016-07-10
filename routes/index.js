@@ -3,6 +3,7 @@ var router = express.Router();
 var request = require('request');
 var session = require('express-session');
 
+var masterConcepts = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -26,7 +27,6 @@ function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     var temp = JSON.parse(body);
     var info = temp.accommodations;
-
     // for (var j = 0; j < info.length; j++){
     // info[j];
     // }

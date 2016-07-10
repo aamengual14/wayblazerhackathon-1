@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  var concepts = [];
+  var conceptsArray = [];
   var imagesArray = [
     {
       imageId: "image1",
@@ -34,7 +34,7 @@ $( document ).ready(function() {
   $('#button4').children('#' + imagesArray[0].imageId).show(200);
   $('#button5').children('#' + imagesArray[0].imageId).show(200);
   $('#button6').children('#' + imagesArray[0].imageId).show(200);
-  console.log("can you hear me?");
+
   var indexButton1 = 0;
   var indexButton2 = 0;
   var indexButton3 = 0;
@@ -44,17 +44,19 @@ $( document ).ready(function() {
 
   $('#button1').click(function(e) {
       e.preventDefault();
-      console.log("you clicked a button");
         $( this ).children('#' + imagesArray[indexButton1].imageId).hide(200);
+        for (var i = 0; i < imagesArray[indexButton1].concepts.length; i++){
+          conceptsArray.push(imagesArray[indexButton1].concepts[i]);
+        }
         indexButton1++;
         if(indexButton1 > 5){
           indexButton1 = 0;
         }
         $( this ).children('#' + imagesArray[indexButton1].imageId).show(200);
+        console.log(conceptsArray);
   });
   $('#button2').click(function(e) {
       e.preventDefault();
-      console.log("you clicked a button");
         $( this ).children('#' + imagesArray[indexButton2].imageId).hide(200);
         indexButton2++;
         if(indexButton2 > 5){
@@ -64,7 +66,6 @@ $( document ).ready(function() {
   });
   $('#button3').click(function(e) {
       e.preventDefault();
-      console.log("you clicked a button");
         $( this ).children('#' + imagesArray[indexButton3].imageId).hide(200);
         indexButton3++;
         if(indexButton3 > 5){
@@ -74,7 +75,6 @@ $( document ).ready(function() {
   });
   $('#button4').click(function(e) {
       e.preventDefault();
-      console.log("you clicked a button");
         $( this ).children('#' + imagesArray[indexButton4].imageId).hide(200);
         indexButton4++;
         if(indexButton4 > 5){
@@ -84,7 +84,6 @@ $( document ).ready(function() {
   });
   $('#button5').click(function(e) {
       e.preventDefault();
-      console.log("you clicked a button");
         $( this ).children('#' + imagesArray[indexButton5].imageId).hide(200);
         indexButton5++;
         if(indexButton5 > 5){
@@ -94,7 +93,6 @@ $( document ).ready(function() {
   });
   $('#button6').click(function(e) {
       e.preventDefault();
-      console.log("you clicked a button");
         $( this ).children('#' + imagesArray[indexButton6].imageId).hide(200);
         indexButton6++;
         if(indexButton6 > 5){
