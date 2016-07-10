@@ -26,7 +26,7 @@ router.post('/', function(req, res, next) {
   request(options, function(err, result, body){
     if(!err) {
       var temp = JSON.parse(body);
-      var info = temp.accommodations[0].image.urls.original;
+      var info = temp.accommodations[0];
 
       console.log(info);
       res.render('results', {body: JSON.parse(body)});
