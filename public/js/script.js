@@ -101,4 +101,9 @@ $( document ).ready(function() {
         }
         $( this ).children('#' + imagesArray[indexButton6].imageId).show(200);
   });
+  $('.fa-chevron-down').click(function () {
+    $('html,body').animate({
+        scrollTop: $(document).height()/2.5,
+    }, 1000);
+  });
 });
