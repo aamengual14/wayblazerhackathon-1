@@ -173,9 +173,10 @@ $( document ).ready(function() {
 
   $('#button1').click(function(e) {
       e.preventDefault();
-        $( this ).children('#' + imagesArray1[indexButton1].imageId).hide(200);
-        for (var i = 0; i < imagesArray1[indexButton1].concepts.length; i++){
-          conceptsArray.push(imagesArray1[indexButton1].concepts[i]);
+        $( this ).children('#' + imagesArray[indexButton1].imageId).hide(200);
+        for (var i = 0; i < imagesArray[indexButton1].concepts.length; i++){
+          conceptsArray.push(imagesArray[indexButton1].concepts[i]);
+          console.log(conceptsArray);
         }
         indexButton1++;
         if(indexButton1 > 5){
@@ -244,6 +245,7 @@ $( document ).ready(function() {
         }
         $( this ).children('#' + imagesArray6[indexButton6].imageId).show(200);
   });
+
   $('.refresh').click(function(e) {
       e.preventDefault();
       $( '#button1' ).children('#' + imagesArray1[indexButton1].imageId).hide(200);
@@ -288,5 +290,12 @@ $( document ).ready(function() {
       }
       $( '#button6' ).children('#' + imagesArray6[indexButton6].imageId).show(200);
     });
+
+
+  $('.fa-chevron-down').click(function () {
+    $('html,body').animate({
+        scrollTop: $(document).height()/2.5,
+    }, 1000);
+  });
 
 });
