@@ -6811,8 +6811,7 @@ button.close {
 }
 
 #userForm {
-  padding-left: 35%;
-  padding-top: 20px;
+  padding: 100px 0px 190px 600px;
   border: 2px solid #757575;
   /*background-color: #f0f0f0;*/
   background-image: url('coverimage.png');
@@ -6821,7 +6820,6 @@ button.close {
   background-position:center;
   /*height: 600px;*/
   background-size: cover;
-  padding-bottom: 10px;
 }
 
 #userForm .submit {
