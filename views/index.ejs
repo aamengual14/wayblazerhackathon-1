@@ -3,6 +3,8 @@
     <!-- Page Content -->
     <div id="userForm">
       <form action="" method="">
+        <label for="rlocation">Location:</label>
+        <input class="input" type="text" name="location" placeholder="Enter city, airport, region, address, hotel name"><br>
         <label for="rooms">Rooms:</label>
         <input class="input" type="text" name="rooms" placeholder="Enter the number of rooms needed"><br>
         <label for="adults">Adults:</label>
@@ -99,6 +101,17 @@
             <input type="hidden" name="concepts" value="" id="hiddenbanana">
             <input class="submit results" type="submit" value="View Results">
             </form>
+        </div>
+        <div class="results">
+          h2>Name: <%- body.accommodations[0].attraction.name %></h2>
+          <h2>Star Rating: <%- body.accommodations[0].attraction.starRating %></h2>
+          <h2>Minimum Rate: <%- body.accommodations[0].attraction.minRate %></h2>
+          <h2>Images: <%- body.accommodations[0].image.urls[0] %></h2>
+
+          <h2>Name: <%- body.accommodations[1].attraction.name %></h2>
+          <h2>Star Rating: <%- body.accommodations[1].attraction.starRating %></h2>
+          <h2>Minimum Rate: <%- body.accommodations[1].attraction.minRate %></h2>
+          <h2>Images: <%- body.accommodations[1].image.urls[0] %></h2>
         </div>
 
 
