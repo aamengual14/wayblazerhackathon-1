@@ -6764,9 +6764,57 @@ button.close {
 
 .row img {
   width: 700px;
-  height: 200px;
+  height: 175px;
 }
 
 .page-header {
   text-align: center;
+}
+
+.submit {
+  background-color: #333;
+  color: #777;
+  text-align: center;
+  padding: 4px 40px;
+  margin-left: 107px;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.results {
+  margin-left: 400px;
+}
+
+#userForm .input{
+  width: 340px;
+  height: 31.2px;
+  display: block;
+  border: 1px solid #000;
+}
+
+#userForm label {
+  display:block;
+}
+
+#userForm {
+  padding-left: 35%;
+  border: 2px solid #757575;
+  /*background-color: #f0f0f0;*/
+  background-image: url('coverimage.png');
+  background-repeat:no-repeat;
+  /*background-size:contain;*/
+  background-position:center;
+  /*height: 600px;*/
+  background-size: cover;
+  padding-bottom: 10px;
+}
+
+#userForm .submit {
+  margin-bottom: 1%;
 }

@@ -14,15 +14,13 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Austin' });
 });
 
-
+router.post('/', function(req, res, next) {
+  console.log(req.body);
+})
 
 var options = {
   url: 'https://api.wayblazer.com/v1/accommodations/search?adults=2&children=0&rooms=1&destination=Austin,TX&tripType=none&startDate=2016-10-06T05:00:00.000Z&endDate=2016-10-10T05:00:00.000Z',
   headers: {
-    // 'accept': 'application/json'
-    // 'accept-encoding': 'gzip, deflate'
-    // 'accept-language: en-US,en;q=0.8'
-    // 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'
     'x-api-key': 'Q6TaYnb0Z48qVIafFEfx481ev598ak1pApM6c0A8'
   }
 };
@@ -32,10 +30,11 @@ function callback(error, response, body) {
     var temp = JSON.parse(body);
     var info = temp.accommodations;
 
-
-    var levelOne = info[0].score;
-    var concepts = levelOne.conceptData;
-    console.log(concepts);
+    // for (var j = 0; j < info.length; j++){
+    // info[j];
+    // }
+  var levelOne = info[0].score;
+  var concepts = levelOne.conceptData;
   }
 }
 
