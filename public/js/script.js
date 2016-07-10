@@ -190,6 +190,7 @@ $( document ).ready(function() {
         $( this ).children('#' + imagesArray2[indexButton2].imageId).hide(200);
         for (var i = 0; i < imagesArray2[indexButton2].concepts.length; i++){
           conceptsArray.push(imagesArray2[indexButton2].concepts[i]);
+          console.log(conceptsArray);
         }
         indexButton2++;
         if(indexButton2 > 5){
@@ -297,9 +298,10 @@ $( document ).ready(function() {
     });
 
 
-  $('.fa-chevron-down').click(function () {
+  $('#arrow').click(function () {
     $('html,body').animate({
-        scrollTop: $(document).height()/2.1,
+        debugger
+        scrollTop: $(document).height()/1.9,
     }, 1000);
   });
 
@@ -311,5 +313,3 @@ $( document ).ready(function() {
 
 
 });
-
-
