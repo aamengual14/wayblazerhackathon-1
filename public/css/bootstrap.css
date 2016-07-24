@@ -6784,7 +6784,7 @@ button.close {
   color: #fff;
   text-align: center;
   padding: 4px 40px;
-  margin-left: 107px;
+  /*margin-left: 107px;*/
 }
 
 /*#arrow {
@@ -6800,7 +6800,7 @@ button.close {
 }
 
 .results {
-  margin-left: 500px;
+  margin: 0 auto;
 }
 
 .oneResult{
@@ -6873,7 +6873,7 @@ button.close {
 }
 
 #userForm {
-  padding: 100px 0px 250px 800px;
+  /*padding: 100px 0px 250px 800px;*/
   border: 2px solid #757575;
   /*background-color: #f0f0f0;*/
   background-image: url('coverimage.png');
@@ -6891,4 +6891,12 @@ button.close {
 
 #help {
   text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+.input {
+  margin: 0 auto;
 }
