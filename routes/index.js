@@ -20,7 +20,7 @@ router.post('/', function(req, res, next) {
   var options = {
   url: 'https://api.wayblazer.com/v1/accommodations/search?adults=2&children=0&rooms=1&destination=Austin,TX&tripType=none&startDate=2016-10-06T05:00:00.000Z&endDate=2016-10-10T05:00:00.000Z&concepts=' + masterBanana,
   headers: {
-    'x-api-key': 'Q6TaYnb0Z48qVIafFEfx481ev598ak1pApM6c0A8'
+    'x-api-key': 'bjY3PN3XF28MDrdimgYRl9laRkIRU9IG1FerHgFV'
   }
   }
   request(options, function(err, result, body){

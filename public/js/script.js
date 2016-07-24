@@ -349,7 +349,7 @@
       }, 1000);
     });
 
-    $('#banana').submit(function(e) {
+    $('#banana').submit(function() {
           var str = conceptsArray.join([separator = ',']);
           $('#hiddenbanana').val(str);
 
