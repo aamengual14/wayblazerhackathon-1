@@ -1,4 +1,7 @@
   $( document ).ready(function() {
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    });
     var conceptsArray = [];
     var imagesArray1 = [
       {
