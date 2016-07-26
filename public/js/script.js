@@ -1,7 +1,9 @@
   $( document ).ready(function() {
+
     $( function() {
       $( "#datepicker" ).datepicker();
     });
+
     var conceptsArray = [];
     var imagesArray1 = [
       {
@@ -352,7 +354,7 @@
       }, 1000);
     });
 
-    $('#banana').submit(function(e) {
+    $('#banana').submit(function() {
           var str = conceptsArray.join([separator = ',']);
           $('#hiddenbanana').val(str);
 
