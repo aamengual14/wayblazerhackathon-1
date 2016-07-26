@@ -1,4 +1,5 @@
   $( document ).ready(function() {
+
     var conceptsArray = [];
     var imagesArray1 = [
       {
