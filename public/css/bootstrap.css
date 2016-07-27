@@ -6901,3 +6901,20 @@ form {
 .input {
   margin: 0 auto;
 }
+
+.refresh img{
+  width: 55px;
+  margin: 0 auto;
+}
+
+.refresh img:hover{
+  opacity: 0.5;
+  /*background-image: url("/images/refresh.png");
+  background-size: 57px;*/
+}
+
+
+.renderResults {
+  text-align: center;
+  margin: 0 auto;
+}
