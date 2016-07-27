@@ -6915,7 +6915,7 @@ form {
 
 .main-header {
   text-align: center;
-  padding-top: 0.5em;
+  padding-top: 1em;
   margin: 0;
   background: linear-gradient(to bottom, rgba(153,153,153,1), rgba(153,153,153,0));
 }
