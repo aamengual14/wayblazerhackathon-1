@@ -2,6 +2,10 @@
 <% include partials/header %>
     <!-- Page Content -->
     <div id="userForm">
+      <div>
+        <h1 class="main-header">Where would you like to go?</h1>
+      </div>
+
       <form action="" method="">
         <!-- <label for="rlocation">Location:</label> -->
         <input class="input" type="text" name="location" placeholder="City, state"><br>
@@ -12,9 +16,9 @@
         <!-- <label for="Children">Children:</label> -->
         <input class="input" type="text" name="children" placeholder="Number of children"><br>
         <!-- <label for="startDate">Start Date:</label> -->
-        <input class="input datepicker" type="text" name="startDate" placeholder="Start Date"><br>
+        <input class="input datepicker" type="text" name="startDate" placeholder="Check in"><br>
         <!-- <label for="endDate">End Date:</label> -->
-        <input class="input datepicker" type="text" name="endDate" placeholder="End Date"><br>
+        <input class="input datepicker" type="text" name="endDate" placeholder="Check out"><br>
         <input type="hidden" name="getPricing" value="FALSE"><br>
         <input id="arrow" class="submit" type="submit" value="Submit">
       </form>

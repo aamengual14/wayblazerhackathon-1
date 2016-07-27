@@ -6913,6 +6913,10 @@ form {
   background-size: 57px;*/
 }
 
+.main-header {
+  text-align: center;
+  padding-top: 0.5em;
+}
 
 .renderResults {
   text-align: center;
