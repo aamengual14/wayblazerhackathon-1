@@ -6922,3 +6922,7 @@ form {
   text-align: center;
   margin: 0 auto;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
